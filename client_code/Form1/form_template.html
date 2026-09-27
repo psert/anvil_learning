@@ -1,9 +1,19 @@
 <anvil-form layout="Minimal_Theme_1.Layouts.BaseLayout">
-    <anvil-block slot="actions"></anvil-block>
-    <anvil-block slot="content">
-        <anvil-component type="ColumnPanel" name="column_panel_1" prop:role="card" designer:placeholder="Add components here"></anvil-component>
-    </anvil-block>
-    <anvil-block slot="title">
-        <anvil-component type="Label" name="label_1" prop:role="h1" prop:text="Home"></anvil-component>
-    </anvil-block>
+  <anvil-block slot="actions"></anvil-block>
+  <anvil-block slot="content">
+    <anvil-component type="ColumnPanel" name="column_panel_1" prop:role="card" designer:placeholder="Add components here">
+      <anvil-component type="ColumnPanel" name="card_1" prop:role="card">
+        <anvil-component type="Label" name="label_2" prop:text="Name:" container:grid_position="DPGVAF,HKWDBE"></anvil-component>
+        <anvil-component type="TextBox" name="name_box" prop:text="name" container:grid_position="DPGVAF,FXSMJQ"></anvil-component>
+        <anvil-component type="Label" name="label_3" prop:text="Email:" container:grid_position="KTFFCB,GKAJHU"></anvil-component>
+        <anvil-component type="TextBox" name="email_box" prop:text="email" container:grid_position="KTFFCB,ASQQJN"></anvil-component>
+        <anvil-component type="Label" name="label_4" prop:text="Feedback" container:grid_position="RBINAR,KHOKLF"></anvil-component>
+        <anvil-component type="TextArea" name="feedback_box" prop:text="feedback" container:grid_position="UCWPFG,OUIDIC"></anvil-component>
+        <anvil-component type="Button" name="submit_button" prop:text="submit" prop:role="null" container:grid_position="HNXTIE,ABAKHM"></anvil-component>
+      </anvil-component>
+    </anvil-component>
+  </anvil-block>
+  <anvil-block slot="title">
+    <anvil-component type="Label" name="label_1" prop:role="h1" prop:text="Feedback Form"></anvil-component>
+  </anvil-block>
 </anvil-form>

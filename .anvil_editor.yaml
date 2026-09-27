@@ -7,4 +7,5 @@ unique_ids:
   modules:
     Layouts: 44CPSKFDUFBQL3YTZ53VVUXAGLEJZ55R
   scripts: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1790534097826888988378727.2488'

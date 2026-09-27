@@ -1,4 +1,27 @@
 allow_embedding: false
+db_schema:
+  feedback:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: email
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: feedback
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: created
+      type: datetime
+    indexes: []
+    server: full
+    title: feedback
 name: Minimal Theme 1
 package_name: Minimal_Theme_1
 runtime_options:
@@ -9,4 +32,7 @@ services:
 - client_config: {enable_v2: true}
   server_config: {}
   source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
 startup: {module: Form1, type: form}
