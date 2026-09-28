@@ -17,10 +17,11 @@ from datetime import datetime
 #   return 42
 #
 @anvil.server.callable
-def add_feedback(name, email, feedback):
+def add_feedback(name, email, feedback, like):
   app_tables.feedback.add_row(
     name=name, 
     email=email, 
     feedback=feedback, 
+    like=like,
     created=datetime.now()
   )

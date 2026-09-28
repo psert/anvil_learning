@@ -19,6 +19,10 @@ db_schema:
       client_hidden: false
       name: created
       type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: like
+      type: string
     indexes: []
     server: full
     title: feedback
@@ -33,6 +37,6 @@ services:
   server_config: {}
   source: /runtime/services/tables.yml
 - client_config: {}
-  server_config: {}
+  server_config: {custom_smtp: false, smtp_encryption: starttls, smtp_host: '://outlook.com', smtp_password: wrIzQtTIxwxBir4TrDlI70ArXRtRHDCchI+T/PXrD/ZGmd1xccMekAZw4POHSi1/5GSxPbUrze31Ql8TTSRPZD/V9XDRy1xYcOu8NhuWmqbdpMR8qaZhCD58m/8b7PC88E/9e6p6QxOP9tG3fwR5VLK7vKkCM5kdkz56T/ZBIJD9, smtp_port: 587, smtp_user: psert@hotmail.com, test_mode: true}
   source: /runtime/services/anvil/email.yml
 startup: {module: Form1, type: form}
